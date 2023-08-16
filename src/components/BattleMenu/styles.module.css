@@ -1,0 +1,58 @@
+.main {
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 100%;
+  
+    gap: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .main > :first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .option {
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    border-radius: 5px;
+    border: 4px solid white;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  @media (max-width: 768px){
+    .main {
+      box-sizing: border-box;
+      border-radius: 10px;
+      height: 100%;
+    
+      gap: 5px;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+    }
+    .main > :first-child {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+    .option {
+      font-family: 'Press Start 2P', cursive;
+      display: flex;
+      border-radius: 5px;
+      border: 4px solid white;
+      background-color: black;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 7px;
+      cursor: pointer;
+      padding: 10px;
+    }
+  }
+  .option:hover {
+    background-color: green;
+  }
