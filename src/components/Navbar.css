@@ -8,6 +8,16 @@
   position: sticky;
   top: 0;
   z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #18181b;
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+.navbar.active {
+  transform: translateY(-200px);
 }
 
 .navbar-container {
@@ -74,6 +84,7 @@
 .menu-icon {
   display: none;
 }
+
 
 @media screen and (max-width: 960px) {
   .NavbarItems {
@@ -151,7 +162,7 @@
   }
 
   .nav-links-mobile:hover {
-    background: #fff;
+    background: none;
     color: #242424;
     transition: 250ms;
   }

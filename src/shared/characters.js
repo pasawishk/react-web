@@ -16,7 +16,7 @@ export const playerStats = {
   export const opponentStats = {
     level: 44,
     iq: 190,
-    name: 'Isaac Newton',
+    name: 'QUANTUM PHYSICS',
     maxHealth: 188,
     img: '/assets/QUANTUM.jpg',
   

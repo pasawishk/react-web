@@ -35,7 +35,7 @@ export const useBattleSequence = sequence => {
 
           (async () => {
             setInSequence(true);
-            setAnnouncerMessage(`${attacker.name} has chosen to attack!`);
+            setAnnouncerMessage(`${attacker.name} has chosen to lecture!`);
             await wait(1000);
 
             turn === 0
@@ -77,7 +77,7 @@ export const useBattleSequence = sequence => {
 
           (async () => {
             setInSequence(true);
-            setAnnouncerMessage(`${attacker.name} has cast a spell!`);
+            setAnnouncerMessage(`${attacker.name} has explained a reason!`);
             await wait(1000);
 
             turn === 0
@@ -121,7 +121,7 @@ export const useBattleSequence = sequence => {
 
           (async () => {
             setInSequence(true);
-            setAnnouncerMessage(`${attacker.name} has chosen to heal!`);
+            setAnnouncerMessage(`${attacker.name} has chosen to back up!`);
             await wait(1000);
 
             turn === 0

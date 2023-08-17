@@ -17,6 +17,24 @@ function Navbar() {
       setButton(true);
     }
   };
+  
+let lastScrollTop = 0;
+
+window.addEventListener("scroll", function(){ 
+   
+   const element = document.getElementById("nav-bar");
+   let st = window.scrollY 
+   if (st > lastScrollTop) {
+      
+      element.style.transform = "translateY(-200px)";
+   } else if (st < lastScrollTop) {
+      
+      element.style.transform = "translateY(0)";
+   } 
+   lastScrollTop = st <= 0 ? 0 : st;
+}, false);
+
+
 
   useEffect(() => {
     showButton();
@@ -26,7 +44,10 @@ function Navbar() {
 
   return (
     <>
-      <nav className='navbar'>
+       <nav
+        className={`navbar ${click ? 'active' : ''}`}
+        id="nav-bar"
+      >
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
             Com's phys

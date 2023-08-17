@@ -3,13 +3,13 @@ import styles from './styles.module.css';
 export const BattleMenu = ({ onAttack, onMagic, onHeal }) => (
   <div className={styles.main}>
     <div onClick={onAttack} className={styles.option}>
-      Calculus attack
+    God does not play dice!!
     </div>
     <div onClick={onMagic} className={styles.option}>
-      Quantum magic
+    Spooky action???
     </div>
     <div onClick={onHeal} className={styles.option}>
-      Relativity heal
+      Back up
     </div>
   </div>
 );
