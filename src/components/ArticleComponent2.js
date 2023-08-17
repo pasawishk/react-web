@@ -4,6 +4,7 @@ import Tetris from './Tetris';
 
 const ArticleComponent2 = () => {
   return (
+    <>
     <div className="article">
       <h1>The History of Quantum Physics</h1>
       <img className ='pic1' src='images/Q1.webp' alt='shrodinger-cat'/>
@@ -25,8 +26,9 @@ const ArticleComponent2 = () => {
       <p>
         In conclusion, the history of quantum physics is a tale of discovery, innovation, and paradigm shifts. It has reshaped our understanding of reality and continues to inspire new avenues of scientific exploration.
       </p>
-      <Tetris/>
     </div>
+    <Tetris/>
+    </>
   );
 };
 
