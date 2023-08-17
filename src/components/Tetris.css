@@ -1,0 +1,47 @@
+.mobile-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @font-face {
+    font-family: 'Pixel-LCD-7';
+    src: url('../font/Pixel-LCD-7.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  .mobile-button {
+    font-family: 'Pixel-LCD-7';
+    src: url('../font/Pixel-LCD-7.woff') format('woff');
+    width: 60px;
+    height: 60px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .larger-font {
+    font-size: 30px; /* Adjust the size as needed */
+  }
+  
+  .mobile-button.up {
+    margin-bottom: 10px;
+  }
+  
+  .mobile-button.down {
+    margin-top: 10px;
+  }
+  
+  .mobile-button.left {
+    margin-right: 10px;
+  }
+  
+  .mobile-button.right {
+    margin-left: 10px;
+  }
+  

@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 img {
-  width: 240px; 
-  height: 300px;
+  width: 120px; 
+  height: 150px;
 }
 
 .user,
@@ -11,11 +11,11 @@ img {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 25px;
+  padding: 10px;
   box-sizing: border-box;
 }
 .hud {
-  gap: 25px;
+  gap: 10px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -25,7 +25,7 @@ img {
   height: 100px;
 }
 .gameHeader {
-  font-size: 20px;
+  font-size: 10px;
   color: white;
   text-shadow: 0px 0px 5px #7f0000;
   font-family: 'Press Start 2P', cursive;
@@ -46,7 +46,7 @@ img {
 .gameImages {
   display: flex;
   justify-content: space-between;
-  padding: 25px;
+  padding: 1vh;
   box-sizing: border-box;
 }
 

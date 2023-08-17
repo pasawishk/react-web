@@ -7,6 +7,7 @@ import HeroSection from '../HeroSection';
 import Cards from '../Cards';
 import Footer from '../Footer';
 import ArticleComponent from '../ArticleComponent';
+import ArticleComponent2 from '../ArticleComponent2';
 
 function Home() {
   // const [winner, setWinner] = useState();
@@ -21,6 +22,7 @@ function Home() {
   return (
     <>
       <HeroSection />
+      <ArticleComponent2/>
       <ArticleComponent/>
 
       {/* <div className={styles.main}>

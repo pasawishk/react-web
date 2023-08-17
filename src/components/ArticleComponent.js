@@ -17,7 +17,8 @@ const ArticleComponent = () => {
   return (
     <>
     <div className="article-container">
-      <h1>The History of Quantum Physics and Einstein's Relationship</h1>
+      <h1>Quantum Physics and Einstein's Relationship</h1>
+      <img className ='pic2' src='images/Q0.jpeg' alt='einstein'/>
       <p>
         Quantum physics, a fundamental branch of science, deals with the behavior of
         particles at the tiniest scales. Albert Einstein, a renowned physicist, had a
@@ -28,7 +29,8 @@ const ArticleComponent = () => {
         mechanics were different. He famously remarked, "God does not play dice with the
         universe," expressing his discomfort with the theory's probabilistic nature.
       </p>
-      </div>
+      </div >
+      <div className='center-container'>
       <div className={styles.main}>
         {mode === 'start' && (
           <StartMenu onStartClick={() => setMode('battle')} />
@@ -46,6 +48,7 @@ const ArticleComponent = () => {
         {mode === 'gameOver' && !!winner && (
           <EndMenu winner={winner} onStartClick={() => setMode('battle')} />
         )}
+      </div>
       </div>
       <div className="article-container">
       <p>

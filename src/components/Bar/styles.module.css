@@ -1,9 +1,8 @@
-/* Regular styles for desktop */
 .main {
   display: flex;
   border-radius: 5px;
   gap: 5px;
-  padding: 5px;
+  padding: 1px;
   align-items: center;
   background-color: white;
   object-fit: contain;
@@ -11,21 +10,21 @@
 }
 
 .label {
-  font-size: 20px;
+  font-size: 10px;
   font-weight: bold;
-  height: 21px;
+  height: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-basis: 50px;
+  flex-basis: 15px;
   color: black;
   object-fit: contain;
   justify-content: center;
 }
 
 .max {
-  height: 15px;
-  border-radius: 5px;
+  height: 7.5px;
+  border-radius: 2.5px;
   overflow: hidden;
   box-sizing: border-box;
   flex: 1;
