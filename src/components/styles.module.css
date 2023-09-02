@@ -1,7 +1,7 @@
 .main {
     background: url('BG1.jpeg');
     width: 50vw;
-    height:70vh;
+    height:80vh;
     display:flex;
     align-items: center;
     flex-direction: column;
@@ -14,7 +14,7 @@
     .main {
         background: url('BG1.jpeg');
         width: 100vw;
-        height:70vh;
+        height:75vh;
         display:flex;
         align-items: center;
         flex-direction: column;

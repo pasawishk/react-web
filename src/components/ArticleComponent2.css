@@ -9,6 +9,7 @@
       h1 {
         font-size: 28px;
         margin-bottom: 30px;
+        margin-top: 60px;
       }
       
       p {
@@ -30,6 +31,16 @@
         width: 50%; /* Let the width adjust according to the original aspect ratio */
         height: auto; /* Let the height adjust according to the original aspect ratio */
         margin-bottom: 20px;
+      }
+
+      img{
+        display: block; /* Make sure the image is treated as a block element */
+        margin: 0 auto; /* Center the image horizontally */
+        max-width: 100%; /* Ensure the image doesn't exceed its original size */
+        width: 50%; /* Let the width adjust according to the original aspect ratio */
+        height: auto; /* Let the height adjust according to the original aspect ratio */
+        margin-bottom: 30px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 1);
       }
     }
     
@@ -63,6 +74,15 @@
           width: 100%; /* Let the width adjust according to the original aspect ratio */
           height: auto; /* Let the height adjust according to the original aspect ratio */
           margin-bottom: 20px;
+        }
+        img{
+          display: block; /* Make sure the image is treated as a block element */
+          margin: 0 auto; /* Center the image horizontally */
+          max-width: 100%; /* Ensure the image doesn't exceed its original size */
+          width: 50%; /* Let the width adjust according to the original aspect ratio */
+          height: auto; /* Let the height adjust according to the original aspect ratio */
+          margin-bottom: 20px;
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 1);
         }
       }
   

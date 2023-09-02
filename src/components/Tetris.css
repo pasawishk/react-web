@@ -3,7 +3,14 @@
     justify-content: center;
     align-items: center;
   }
-
+.instruction{
+  font-family: 'Pixel-LCD-7';
+  src: url('../font/Pixel-LCD-7.woff') format('woff');
+  width: 600px;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
   @font-face {
     font-family: 'Pixel-LCD-7';
     src: url('../font/Pixel-LCD-7.woff') format('woff');
@@ -28,20 +35,12 @@
   .larger-font {
     font-size: 30px; /* Adjust the size as needed */
   }
-  
-  .mobile-button.up {
-    margin-bottom: 10px;
+
+  .tetris{
+    height: 90vh;
+    }
+@media (max-width: 768px){
+.tetris{
+  height: 80vh;
   }
-  
-  .mobile-button.down {
-    margin-top: 10px;
-  }
-  
-  .mobile-button.left {
-    margin-right: 10px;
-  }
-  
-  .mobile-button.right {
-    margin-left: 10px;
-  }
-  
+}

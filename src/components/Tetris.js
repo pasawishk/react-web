@@ -81,13 +81,13 @@ const Tetris = () => {
 
   const move = ({ keyCode }) => {
     if (!gameOver) {
-      if (keyCode === 37) {
+      if (keyCode === 65) {
         movePlayer(-1);
-      } else if (keyCode === 39) {
+      } else if (keyCode === 68) {
         movePlayer(1);
-      } else if (keyCode === 40) {
+      } else if (keyCode === 83) {
         dropPlayer();
-      }else if (keyCode === 38) {
+      }else if (keyCode === 87) {
         playerRotate(stage,1);
       }
     }
@@ -98,6 +98,7 @@ const Tetris = () => {
   },dropTime)
 
   return (
+    <div className='tetris'>
     <StyledTetrisWrapper role="button" tabIndex="0" onKeyDown={e => move(e)} onKeyUp={keyUp}>
       <StyledTetris>
         <Stage stage={stage} />
@@ -112,6 +113,9 @@ const Tetris = () => {
             </div>
           )}
           <StartButton callback={startGame} />
+          <div className='instruction'>
+     control using WASD
+  </div>
           <div className="mobile-button-container">
           <button className="mobile-button" onClick={() => playerRotate(stage, 1)}>Rotate</button>
   </div>
@@ -123,6 +127,7 @@ const Tetris = () => {
         </aside>
       </StyledTetris>
     </StyledTetrisWrapper>
+    </div>
   );
 };
 
